@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeneCSS - Framework</title>
+    <link rel="stylesheet" href="sene.css"/>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+    <script>
+        page = 1;
+        function changeEncours(p) {
+            btnEncours = document.getElementById('p' + page);
+            btnEncours.className = "sene-button sene-nav-autre";
+            btnCible = document.getElementById('p' + p);
+            btnCible.className = "sene-button sene-nav-encours";
+            page = p;
+        }
+
+        function suivant() {
+            pageSuivante = Math.min(page + 1, 4)
+            changeEncours(pageSuivante);
+        }
+
+        function precedent() {
+            pagePrecedente = Math.max(page - 1, 1)
+            changeEncours(pagePrecedente);
+        }
+
+    </script>
+</head>
+<body>
+    <div class='sene-container sene-light-gray'>
+        <p>
+            Voici les différents boutons SENE :
+        </p>
+        <button class='sene-button'>Par défaut</button><br><br>
+        <button class='sene-button sene-arrondi'>Arrondi</button>
+    </div>
+
+    <div class='sene-container sene-white'>
+        <p>
+            Exemple de boutons de navigations :
+        </p>
+        <button class='sene-button sene-nav-gauche' onclick='precedent()'>
+            Préc.
+        </button><button class='sene-button sene-nav-encours' id='p1' onclick='changeEncours(1);'>
+            1
+        </button><button class='sene-button sene-nav-autre' id='p2' onclick='changeEncours(2);'>
+            2
+        </button><button class='sene-button sene-nav-autre' id='p3' onclick='changeEncours(3);'>
+            3
+        </button><button class='sene-button sene-nav-autre' id='p4' onclick='changeEncours(4);'>
+            4
+        </button><button class='sene-button sene-nav-droite' onclick='suivant()'>
+            Suiv.
+        </button>
+    </div>
+    <div class='sene-container sene-light-gray'>
+        <p>
+            Voici les différents états d'un bouton SENE :
+        </p>
+        <button class='sene-button'>Bouton standard</button><br>
+        <button class='sene-button sene-active'>Etat cliqué</button><br>
+        <button class='sene-button sene-hover'>Etat survolé</button><br>
+        <button class='sene-button sene-focus'>Etat avec focus</button><br>
+        <button class='sene-button sene-disabled'>Etat désativé</button><br>
+    </div>
+    <div class='sene-container sene-white'>
+        <p>
+            Voici un exemple de zone de texte
+        </p>
+        <label for='zone-1'>Zone de texte : </label>
+        <input type='text' id='zone-1' class='sene-textbox' value='' placeholder='Entrez votre texte ici'/>
+    </div> 
+</body>
+</html>

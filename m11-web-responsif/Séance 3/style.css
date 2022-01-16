@@ -1,0 +1,134 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0px;
+}
+
+p {
+    color: rgba(255,255,255, 0.5);
+}
+
+.navigation {
+    position: sticky;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    counter-reset: count;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navigation li {
+	counter-increment: count;
+    background-color: olivedrab;
+    border-bottom: 1px solid rgba(255,255,255,0.5)
+}
+
+.navigation li a::before {
+	content: counter(count) "- ";
+}
+
+.navigation li a {
+    display: block;
+    text-overflow: clip;
+    width: auto;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.navigation li:hover {
+    background-color: olive;
+}
+
+.entete,
+.pied-de-page {
+	background-color: #ed732e;
+	height: 150px;
+	margin: 3px;
+	padding: 5px;
+	width: calc(100vw - 6px);
+	color: white;
+	box-sizing: border-box;
+}
+
+.principal {
+	display: flex;
+	box-sizing: border-box;
+}
+
+.corps-de-page {
+	border: 3px solid black;
+	width: 60vw;
+	padding: 2px;
+	box-sizing: border-box;
+}
+
+.corps-de-page p {
+    color: rgba(20,20,20,0.5);
+}
+
+.corps-de-page img {
+	width: 100%;
+	margin: auto;
+}
+
+.pnx-gauche,
+.pnx-droite {
+	background-color: #587934;
+	width: 20vw;
+	min-height: 600px;
+	margin: 0px 3px;
+	padding: 5px;
+	color: white;
+	box-sizing: border-box;
+}
+
+/* Affichage tablette */
+@media screen and (max-width: 900px) {
+	.principal {
+		flex-wrap: wrap;
+		width: 100vw;
+	}
+
+	.corps-de-page {
+		width: calc(66vw - 3px);
+	}
+
+	.pnx-gauche {
+		width: calc(34vw - 6px);
+	}
+
+	.pnx-droite {
+		width: calc(100vw - 6px);
+		height: 300px;
+		/* top right bottom left */
+		/* |   |        |   |    */
+        /* |   +----+   |   |    */
+		/* +----+   |   |   |    */
+		/*      |   |   |   |    */
+		margin: 3px 3px 0px 3px;
+	}
+}
+
+/* Affichage sur mobile */
+@media screen and (max-width: 400px) {
+	.principal {
+		flex-direction: column;
+	}
+
+	.pnx-gauche {
+		width: auto;
+        margin-bottom: 3px;
+	}
+
+	.pnx-droite {
+		width: auto;
+	}
+
+	.corps-de-page {
+		width: auto;
+        margin: 0px 3px;
+	}
+}
