@@ -1,0 +1,19 @@
+.bold {
+	font-weight: bold;
+}
+
+.large {
+	width: 80%;
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+.w3-card img {
+    height: 20vmin; /* 1vmin: c'est le min(1vw, 1vh) */
+}
