@@ -1,8 +1,13 @@
-.header {
+.header,
+.footer {
   height: 150px;
   background-color: #ed732e;
 }
 
 .sidebar {
   background-color: #587934;
+}
+
+.sidebar-right {
+  min-height: 300px;
 }
