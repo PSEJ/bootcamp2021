@@ -11,7 +11,8 @@ autres disparaissent.
 
 ## Mobile
 
-![Modèle Mobile](./mobile.jpg)
+<img src="mobile.jpg" alt="Modèle mobile" style="width:200px;"/>
+
 Il y aura :
 
 - un logo
@@ -25,7 +26,8 @@ Attention, les zones de saisies sont précédés par des libellés ou des placeh
 
 ## Tablette
 
-![Modèle Tablette](./tablette.png)
+<img src="tablette.jpg" alt="Modèle Tablette" style="width:200px;"/>
+
 C'est les mêmes éléments que le mobile mais disposés comme suit :
 
 - Le logo s'affiche au centre de la zone qui prend 50% de la moitié de la page
@@ -33,6 +35,17 @@ C'est les mêmes éléments que le mobile mais disposés comme suit :
 
 ## Desktop
 
-![Modèle Mobile](./desktop.jpg)
+<img src="desktop.jpg" alt="Modèle Mobile" style="width:200px;"/>
+
 Il s'affiche comme la tablette mais contenu dans une "card" à bord arrondi et
 avec une ombre portée assez large.
+
+## Quelques éléments supplémentaires
+
+Voici une l'image du logo :
+
+<img src="logo.png" alt="Modèle Mobile" style="width:200px;"/>
+
+Voici l'image à utiliser comme remplissage pour la tablette et le desktop :
+
+<img src="welcome.png" alt="Modèle Mobile" style="width:200px;"/>

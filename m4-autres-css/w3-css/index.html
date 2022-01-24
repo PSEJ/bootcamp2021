@@ -1,178 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exemple W3 CSS</title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script type="text/javascript" src="./script.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="w3-container w3-green w3-text-amber">
-        <h1 class="bold">
-            Des vues impressionnantes
-        </h1>
+      <h1 class="bold">Des vues impressionnantes</h1>
     </header>
     <main class="w3-container w3-margin">
-        <div class="w3-container">
-            <div class="w3-bar w3-grey" onclick="toggle('accordeon-1')">
-                <div class="w3-button">
-                    <i class="fa fa-chevron-right"></i>
-                </div>
-                <div class="w3-button w3-left-align large">
-                    Les montagnes
-                </div>
-            </div>
-            <div id="accordeon-1" class="w3-container w3-hide">
-                <div class="w3-col m6 l4">
-                    <div class="w3-card w3-margin">
-                        <div class="w3-container w3-blue">
-                            <h5>
-                                Premi&egrave;re montagne
-                            </h5>
-                        </div>
-                        <img class="w3-col" src="images/montagne1.jpeg">
-                        <div class="w3-center w3-small">
-                            Voici une belle de vue de la Premi&egrave;re montagne
-                        </div>
-                    </div>
-                </div>
-                <div class="w3-col m6 l4">
-                    <div class="w3-card w3-margin">
-                        <div class="w3-container w3-blue">
-                            <h5>
-                                Deuxi&egrave;me montagne
-                            </h5>
-                        </div>
-                        <img class="w3-col" src="images/montagne2.jpeg">
-                        <div class="w3-center w3-small">
-                            Voici une belle de vue de la Deuxi&egrave;me montagne
-                        </div>
-                    </div>
-                </div>
-                <div class="w3-col m6 l4">
-                    <div class="w3-card w3-margin">
-                        <div class="w3-container w3-blue">
-                            <h5>
-                                Troisi&egrave;me montagne
-                            </h5>
-                        </div>
-                        <img class="w3-col" src="images/montagne3.jpeg">
-                        <div class="w3-center w3-small">
-                            Voici une belle de vue de la Troisi&egrave;me montagne
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="w3-container">
+        <div class="w3-bar w3-grey" onclick="toggle('accordeon-1')">
+          <div class="w3-button">
+            <i class="fa fa-chevron-right"></i>
+          </div>
+          <div class="w3-button w3-left-align large">Les montagnes</div>
         </div>
-        <div class="w3-container">
-            <div class="w3-bar w3-grey" onclick="toggle('accordeon-2')">
-                <div class="w3-button">
-                    <i class="fa fa-chevron-right"></i>
-                </div>
-                <div class="w3-button w3-left-align large">
-                    Les lacs
-                </div>
+        <div id="accordeon-1" class="w3-container w3-hide">
+          <div class="w3-col m6 l4">
+            <div class="w3-card w3-margin">
+              <div class="w3-container w3-blue">
+                <h5>Premi&egrave;re montagne</h5>
+              </div>
+              <img class="w3-col" src="images/montagne1.jpeg" />
+              <div class="w3-center w3-small">
+                Voici une belle de vue de la Premi&egrave;re montagne
+              </div>
             </div>
-            <div id="accordeon-2" class="w3-container w3-hide">
-                <div class="w3-col m6 l4">
-                    <div class="w3-card w3-margin">
-                        <div class="w3-container w3-blue">
-                            <h5>
-                                Premier lac
-                            </h5>
-                        </div>
-                        <img class="w3-col" src="images/lac1.jpg">
-                        <div class="w3-center w3-small">
-                            Voici une belle de vue du premier lac
-                        </div>
-                    </div>
-                </div>
-                <div class="w3-col m6 l4">
-                    <div class="w3-card w3-margin">
-                        <div class="w3-container w3-blue">
-                            <h5>
-                                Deuxi&egrave;me lac
-                            </h5>
-                        </div>
-                        <img class="w3-col" src="images/lac2.jpg">
-                        <div class="w3-center w3-small">
-                            Voici une belle de vue du Deuxi&egrave;me lac
-                        </div>
-                    </div>
-                </div>
-                <div class="w3-col m6 l4">
-                    <div class="w3-card w3-margin">
-                        <div class="w3-container w3-blue">
-                            <h5>
-                                Troisi&egrave;me lac
-                            </h5>
-                        </div>
-                        <img class="w3-col" src="images/lac3.jpg">
-                        <div class="w3-center w3-small">
-                            Voici une belle de vue de la Troisi&egrave;me lac
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="w3-col m6 l4">
+            <div class="w3-card w3-margin">
+              <div class="w3-container w3-blue">
+                <h5>Deuxi&egrave;me montagne</h5>
+              </div>
+              <img class="w3-col" src="images/montagne2.jpeg" />
+              <div class="w3-center w3-small">
+                Voici une belle de vue de la Deuxi&egrave;me montagne
+              </div>
             </div>
+          </div>
+          <div class="w3-col m6 l4">
+            <div class="w3-card w3-margin">
+              <div class="w3-container w3-blue">
+                <h5>Troisi&egrave;me montagne</h5>
+              </div>
+              <img class="w3-col" src="images/montagne3.jpeg" />
+              <div class="w3-center w3-small">
+                Voici une belle de vue de la Troisi&egrave;me montagne
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="w3-container">
-            <div class="w3-bar w3-grey" onclick="toggle('accordeon-3')">
-                <div class="w3-button">
-                    <i class="fa fa-chevron-right"></i>
-                </div>
-                <div class="w3-button w3-left-align large">
-                    Les vall&eacute;es
-                </div>
-            </div>
-            <div id="accordeon-3" class="w3-container w3-hide">
-                <div class="w3-col m6 l4">
-                    <div class="w3-card w3-margin">
-                        <div class="w3-container w3-blue">
-                            <h5>
-                                Premi&egrave;re vall&eacute;es
-                            </h5>
-                        </div>
-                        <img class="w3-col" src="images/vallee1.jpg">
-                        <div class="w3-center w3-small">
-                            Voici une belle de vue de la Premi&egrave;re vall&eacute;e
-                        </div>
-                    </div>
-                </div>
-                <div class="w3-col m6 l4">
-                    <div class="w3-card w3-margin">
-                        <div class="w3-container w3-blue">
-                            <h5>
-                                Deuxi&egrave;me vall&eacute;e
-                            </h5>
-                        </div>
-                        <img class="w3-col" src="images/vallee2.jpeg">
-                        <div class="w3-center w3-small">
-                            Voici une belle de vue de la Deuxi&egrave;me vall&eacute;e
-                        </div>
-                    </div>
-                </div>
-                <div class="w3-col m6 l4">
-                    <div class="w3-card w3-margin">
-                        <div class="w3-container w3-blue">
-                            <h5>
-                                Troisi&egrave;me vall&eacute;e
-                            </h5>
-                        </div>
-                        <img class="w3-col" src="images/vallee3.jpg">
-                        <div class="w3-center w3-small">
-                            Voici une belle de vue de la Troisi&egrave;me vall&eacute;e
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="w3-container">
+        <div class="w3-bar w3-grey" onclick="toggle('accordeon-2')">
+          <div class="w3-button">
+            <i class="fa fa-chevron-right"></i>
+          </div>
+          <div class="w3-button w3-left-align large">Les lacs</div>
         </div>
+        <div id="accordeon-2" class="w3-container w3-hide">
+          <div class="w3-col m6 l4">
+            <div class="w3-card w3-margin">
+              <div class="w3-container w3-blue">
+                <h5>Premier lac</h5>
+              </div>
+              <img class="w3-col" src="images/lac1.jpg" />
+              <div class="w3-center w3-small">
+                Voici une belle de vue du premier lac
+              </div>
+            </div>
+          </div>
+          <div class="w3-col m6 l4">
+            <div class="w3-card w3-margin">
+              <div class="w3-container w3-blue">
+                <h5>Deuxi&egrave;me lac</h5>
+              </div>
+              <img class="w3-col" src="images/lac2.jpg" />
+              <div class="w3-center w3-small">
+                Voici une belle de vue du Deuxi&egrave;me lac
+              </div>
+            </div>
+          </div>
+          <div class="w3-col m6 l4">
+            <div class="w3-card w3-margin">
+              <div class="w3-container w3-blue">
+                <h5>Troisi&egrave;me lac</h5>
+              </div>
+              <img class="w3-col" src="images/lac3.jpg" />
+              <div class="w3-center w3-small">
+                Voici une belle de vue de la Troisi&egrave;me lac
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w3-container">
+        <div class="w3-bar w3-grey" onclick="toggle('accordeon-3')">
+          <div class="w3-button">
+            <i class="fa fa-chevron-right"></i>
+          </div>
+          <div class="w3-button w3-left-align large">Les vall&eacute;es</div>
+        </div>
+        <div id="accordeon-3" class="w3-container w3-hide">
+          <div class="w3-col m6 l4">
+            <div class="w3-card w3-margin">
+              <div class="w3-container w3-blue">
+                <h5>Premi&egrave;re vall&eacute;es</h5>
+              </div>
+              <img class="w3-col" src="images/vallee1.jpg" />
+              <div class="w3-center w3-small">
+                Voici une belle de vue de la Premi&egrave;re vall&eacute;e
+              </div>
+            </div>
+          </div>
+          <div class="w3-col m6 l4">
+            <div class="w3-card w3-margin">
+              <div class="w3-container w3-blue">
+                <h5>Deuxi&egrave;me vall&eacute;e</h5>
+              </div>
+              <img class="w3-col" src="images/vallee2.jpeg" />
+              <div class="w3-center w3-small">
+                Voici une belle de vue de la Deuxi&egrave;me vall&eacute;e
+              </div>
+            </div>
+          </div>
+          <div class="w3-col m6 l4">
+            <div class="w3-card w3-margin">
+              <div class="w3-container w3-blue">
+                <h5>Troisi&egrave;me vall&eacute;e</h5>
+              </div>
+              <img class="w3-col" src="images/vallee3.jpg" />
+              <div class="w3-center w3-small">
+                Voici une belle de vue de la Troisi&egrave;me vall&eacute;e
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
-</body>
-
+  </body>
 </html>
+
