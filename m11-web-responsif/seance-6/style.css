@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 90vmin;
+  margin: auto;
+}
+
+.username {
+  margin: 0.25rem;
+}
+
+.text_input {
+  border-bottom: 1px solid;
+  padding-bottom: 0.5rem;
+}
+
+#username {
+  width: 80vmin;
+  margin-left: 0.5rem;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: gray;
+}
+
+#password {
+  width: 80vmin;
+  margin-left: 0.5rem;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: gray;
+}
+
+.password {
+  margin: 0.25rem;
+}
