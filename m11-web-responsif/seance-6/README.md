@@ -26,7 +26,7 @@ Attention, les zones de saisies sont précédés par des libellés ou des placeh
 
 ## Tablette
 
-<img src="tablette.jpg" alt="Modèle Tablette" style="width:200px;"/>
+<img src="tablette.png" alt="Modèle Tablette" style="width:200px;"/>
 
 C'est les mêmes éléments que le mobile mais disposés comme suit :
 
