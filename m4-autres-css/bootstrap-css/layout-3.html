@@ -25,34 +25,65 @@
     <a id="haut-page"></a>
     <div class="container-fluid text-light">
       <div class="row m-1">
-        <div class="col-12 mb-1 p-1 header">
+        <div class="col-12 mb-1 p-1 header sticky-top">
           <p class="text-white-50">ENTETE</p>
-          <div class="row">
-            <h1 class="col-10">Exercice Bootstrap</h1>
-            <button
-              class="btn col"
-              data-bs-toggle="collapse"
-              data-bs-target="#menu"
-            >
-              <i class="text-white fa fa-bars"></i>
-            </button>
-          </div>
+          <nav class="navbar navbar-expand-sm navbar-dark">
+            <div class="container-fluid bg-dark p-2">
+              <h1>Exercice Bootstrap 5</h1>
+              <button
+                class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse p-2" id="menu">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a href="#haut-page" class="nav-link"> Haut de page </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      href="#"
+                      role="button"
+                      >Travail demand&eacute;</a
+                    >
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a href="#mobile" class="dropdown-item"
+                          >Affichage mobile</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#tablette" class="dropdown-item"
+                          >Affichage tablette</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#desktop" class="dropdown-item"
+                          >Affichage desktop</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         </div>
         <div class="col-12 col-sm-4 col-lg-2 mb-1 me-1 p-1 sidebar">
           <p class="text-white-50">PANNEAU LATERAL GAUCHE</p>
-          <div id="menu" class="collapse">
+          <div class="d-none d-sm-block">
             <h2>Table de matières</h2>
             <ul class="list-group">
               <li class="list-group-item">
                 <a href="#haut-page" class="btn">Haut de page</a>
               </li>
               <li class="list-group-item">
-                <div data-bs-toggle="collapse" data-bs-target=".sous-menu">
-                  <i class="fa fa-caret-right collapse show sous-menu"></i>
-                  <i class="fa fa-caret-down collapse sous-menu"></i>
-                  Travail demand&eacute;
-                </div>
-                <ul class="list-group collapse sous-menu">
+                <div>Travail demand&eacute;</div>
+                <ul class="list-group">
                   <li class="list-group-item bg-dark bg-opacity-25">
                     <a href="#mobile" class="btn">Affichage mobile</a>
                   </li>
@@ -171,7 +202,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-12 col-lg-2 mb-1 ms-1 p-1 sidebar sidebar-right">
+        <div class="col-12 col-lg-2 mb-1 ms-lg-1 p-1 sidebar sidebar-right">
           <p class="text-white-50">PANNEAU LATERAL DROITE</p>
         </div>
         <div class="col-12 p-1 footer">
