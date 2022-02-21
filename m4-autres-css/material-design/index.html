@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <script>
+      mdc.textField.MDCTextField.attachTo(document.querySelector('.mdc-text-field'));
+    </script>
+    <title>Login en material-design</title>
+  </head>
+  <body class="mdc-typography">
+    <div>
+      <img src="logo.png" alt="logo" width="100"/>
+
+      <h1 class="mdc-typography--headline3">BIENVENUE</h1>
+      <form action="">
+
+        <div class="mdc-text-field mdc-text-field--box username">
+          <input type="text" class="mdc-text-field__input" id="username-input" name="username" required>
+          <label class="mdc-floating-label" for="username-input">Utilisateur</label>
+          <div class="mdc-line-ripple"></div>
+        </div>
+
+        <label for="">Mot de passe</label>
+        <input type="password" id="password" />
+
+        <button>LOGIN</button>
+      </form>
+      <a href="">S'enregistrer</a>
+      <a href="">Mot de passe oublié?</a>
+    </div>
+  </body>
+</html>
