@@ -13,38 +13,51 @@
   </head>
   <body>
     <div class="container">
-      <form action="." method="POST">
-        <div class="username">
-          <div>
-            <label id="lbl_username" for="username">Nom d'utilisateur </label>
+      <div class="welcome">
+        <img src="welcome.png" alt="" />
+      </div>
+      <div class="login_form">
+        <img src="logo.png" alt="logo" class="logo" />
+        <h1 class="heading1">BONJOUR</h1>
+
+        <form action="." method="POST">
+          <div class="input_box" id="first">
+            <div class="input_icon">
+              <i class="fa fa-user"></i>
+            </div>
+
+            <div class="text_input">
+              <label class="input_label" id="lbl_username" for="username"
+                >Nom d'utilisateur
+              </label>
+
+              <input
+                type="text"
+                placeholder="Nom d'utilisateur ou email"
+                id="username"
+              />
+            </div>
           </div>
-          <div class="text_input">
-            <i class="fa fa-user"></i>
-            <input
-              type="text"
-              placeholder="Nom d'utilisateur ou email"
-              id="username"
-            />
+          <div class="input_box" id="second">
+            <div class="input_icon">
+              <i class="fa fa-lock"></i>
+            </div>
+            <div class="text_input">
+              <label class="input_label" id="lbl_password" for="password">
+                Mot de passe
+              </label>
+              <input type="password" placeholder="Mot de passe" id="password" />
+            </div>
           </div>
-        </div>
-        <div class="password">
-          <div>
-            <label id="lbl_password" for="password"> Mot de passe </label>
+          <div class="bouton">
+            <button type="submit">Se connecter</button>
           </div>
-          <div class="text_input">
-            <i class="fa fa-lock"></i>
-            <input type="password" placeholder="Mot de passe" id="password" />
+          <div class="lien">
+            <a href="">S'enregistrer</a>
+            <a href="">Mot de passe</a>
           </div>
-        </div>
-        <div>
-          <button type="submit">Se connecter</button>
-        </div>
-        <div>
-          <a href="">S'enregistrer</a>
-          /
-          <a href="">Mot de passe</a>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
   </body>
 </html>
