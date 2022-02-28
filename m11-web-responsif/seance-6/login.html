@@ -13,38 +13,44 @@
   </head>
   <body>
     <div class="container">
-      <form action="." method="POST">
-        <div class="username">
-          <div>
-            <label id="lbl_username" for="username">Nom d'utilisateur </label>
+      <div class="welcome"></div>
+      <div class="login_form">
+        <img class="logo" src="logo.png" alt="logo" />
+        <h1 class="heading1">Bonjour</h1>
+        <form action="." method="POST">
+          <div class="input_box">
+            <div class="input_icon">
+              <i class="fa fa-user"></i>
+            </div>
+            <div class="input_field">
+              <label class="input_label" id="lbl_username" for="username"
+                >Nom d'utilisateur
+              </label>
+              <input
+                type="text"
+                placeholder="Nom d'utilisateur ou email"
+                id="username"
+              />
+            </div>
           </div>
-          <div class="text_input">
-            <i class="fa fa-user"></i>
-            <input
-              type="text"
-              placeholder="Nom d'utilisateur ou email"
-              id="username"
-            />
+          <div class="input_box">
+            <div class="input_icon">
+              <i class="fa fa-lock"></i>
+            </div>
+            <div class="input_field">
+              <label class="input_label" id="lbl_password" for="password">
+                Mot de passe
+              </label>
+              <input type="password" placeholder="Mot de passe" id="password" />
+            </div>
           </div>
-        </div>
-        <div class="password">
-          <div>
-            <label id="lbl_password" for="password"> Mot de passe </label>
+          <button class="submit" type="submit">Se connecter</button>
+          <div class="links">
+            <a href="">S'enregistrer</a>
+            <a href="">Mot de passe</a>
           </div>
-          <div class="text_input">
-            <i class="fa fa-lock"></i>
-            <input type="password" placeholder="Mot de passe" id="password" />
-          </div>
-        </div>
-        <div>
-          <button type="submit">Se connecter</button>
-        </div>
-        <div>
-          <a href="">S'enregistrer</a>
-          /
-          <a href="">Mot de passe</a>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
   </body>
 </html>

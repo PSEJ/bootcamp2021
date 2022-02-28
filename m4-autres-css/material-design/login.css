@@ -1,0 +1,13 @@
+.username {
+  display: block;
+}
+
+.password {
+  display: block;
+}
+
+.logo {
+  display: block;
+  width: 33%;
+  margin: auto;
+}

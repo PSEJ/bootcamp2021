@@ -3,37 +3,132 @@ body {
 }
 
 .container {
-  width: 90vmin;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  width: 80vmin;
+}
+
+.logo {
+  display: block;
+  width: 40%;
   margin: auto;
 }
 
-.username {
-  margin: 0.25rem;
+.heading1 {
+  text-align: center;
 }
 
-.text_input {
-  border-bottom: 1px solid;
-  padding-bottom: 0.5rem;
+.input_box {
+  display: flex;
+  padding: 0.5rem;
+  border-bottom: 2px solid #255025;
 }
 
-#username {
-  width: 80vmin;
-  margin-left: 0.5rem;
-  border: none;
+.input_icon {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 10%;
+  padding: 0.17rem;
   font-size: 1.5rem;
+  color: #25dd25;
+}
+
+.input_label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #808080;
+}
+
+.input_box .input_field {
+  width: 90%;
+}
+
+.input_box .input_field input {
+  width: 100%;
+  border: 0px;
+  margin-top: 0.5rem;
+  font-size: 1.25rem;
   font-weight: 500;
   color: gray;
 }
 
-#password {
-  width: 80vmin;
-  margin-left: 0.5rem;
-  border: none;
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: gray;
+.welcome {
+  display: none;
 }
 
-.password {
-  margin: 0.25rem;
+.welcome img {
+  width: 100%;
+}
+
+.submit {
+  display: block;
+  height: 3rem;
+  width: 75%;
+  margin: 1rem auto;
+  border: 0px;
+  border-radius: 2rem;
+  background-color: #25dd25;
+  color: white;
+  font-weight: bold;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 75%;
+  margin: auto;
+}
+
+.links a {
+  text-decoration: none;
+  color: #808080;
+  font-weight: 500;
+}
+
+@media (min-width: 570px) {
+  body {
+    margin: 0px;
+  }
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+
+  .welcome {
+    display: block;
+    background-image: url('welcome.png');
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50%;
+  }
+
+  .login_form {
+    width: 40%;
+    max-width: 360px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 970px) {
+  body {
+    background-color: #254525;
+    display: flex;
+    align-items: center;
+  }
+  .container {
+    border-radius: 2rem;
+    width: 90%;
+  }
+  .welcome {
+    height: 40rem;
+    border-radius: 2rem;
+  }
 }
