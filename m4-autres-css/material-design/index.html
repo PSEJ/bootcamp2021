@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+    <title>Login en material-design</title>
+  </head>
+  <body class="mdc-typography">
+    <div>
+      <img src="logo.png" alt="logo" class="logo"/>
+      <h1 class="mdc-typography--headline3 titre">BIENVENUE</h1>
+      <form action="">
+        <div class="mdc-text-field mdc-text-field--filled username">
+          <span class="mdc-text-field__ripple"></span>
+          <span class="mdc-floating-label">Utilisateur</span>
+          <input type="text" class="mdc-text-field__input" id="username-input" name="username" required>
+          <span class="mdc-line-ripple"></span>
+        </div>
+        <div class="mdc-text-field mdc-text-field--filled password">
+          <span class="mdc-text-field__ripple"></span>
+          <span class="mdc-floating-label">Mot de passe</span>
+          <input type="password" class="mdc-text-field__input" id="password-input" name="password" required>
+          <span class="mdc-line-ripple"></span>
+        </div>
+        <button class="mdc-fab mdc-fab--extended login">LOGIN</button>
+      </form>
+      <div class="actions">
+        <a href="" class="mdc-button register">S'enregistrer</a>
+        <a href="" class="mdc-button forgotten">Mot de passe oublié?</a>
+      </div>
+    </div>
+    <script>
+      mdc.textField.MDCTextField.attachTo(document.querySelector('.username'));
+      mdc.textField.MDCTextField.attachTo(document.querySelector('.password'));
+      mdc.ripple.MDCRipple.attachTo(document.querySelector('.login'));
+      mdc.ripple.MDCRipple.attachTo(document.querySelector('.register'));
+      mdc.ripple.MDCRipple.attachTo(document.querySelector('.forgotten'));
+    </script>
+  </body>
+</html>

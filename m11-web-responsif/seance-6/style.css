@@ -1,8 +1,10 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  
 }
 
 .container {
+<<<<<<< HEAD
   position: absolute;
   top: 50%;
   left: 50%;
@@ -16,17 +18,55 @@ body {
 .logo {
   display: block;
   width: 40%;
+=======
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+
+.logo {
+  width: 20vmin;
+>>>>>>> a9d205f2605b3d8b5dacafa3b0c35bf546e6f0be
   margin: auto;
+  display: block;
 }
 
 .heading1 {
   text-align: center;
 }
 
+<<<<<<< HEAD
 .input_box {
   display: flex;
   padding: 0.5rem;
   border-bottom: 2px solid #255025;
+=======
+.input_label {
+  font-weight: bold;
+  color: #808080;
+  margin-left: 10px;
+}
+
+.input_box {
+  display:flex ;
+  margin: 0.25rem;
+  border-bottom: 1px solid;
+  padding-bottom: 0.5rem;
+
+}
+
+.input_icon {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-bottom: 0.5em;
+  font-size:1.5em;
+  color: #25dd25;
+}
+
+.text_input {
+  /* border-bottom: 1px solid;
+  padding-bottom: 0.5rem; */
+>>>>>>> a9d205f2605b3d8b5dacafa3b0c35bf546e6f0be
 }
 
 .input_icon {
@@ -92,6 +132,7 @@ body {
   font-weight: 500;
 }
 
+<<<<<<< HEAD
 @media (min-width: 570px) {
   body {
     margin: 0px;
@@ -131,4 +172,60 @@ body {
     height: 40rem;
     border-radius: 2rem;
   }
+=======
+#first {
+  margin-bottom: 20px;
+>>>>>>> a9d205f2605b3d8b5dacafa3b0c35bf546e6f0be
 }
+#second {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+button {
+  border-radius: 50px;
+  margin: auto;
+  height: 3rem;
+  width: 18rem;
+  background-color: #25dd25;
+  color: white;
+  text-align: center;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+ 
+}
+
+.lien {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  width: 18rem;
+}
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #808080;
+  margin-top: 1em;
+}
+
+.welcome {
+  display: none;
+}
+
+.login_form {
+  width: 90vmin;
+  margin: auto;
+}
+
+@media screen and (min-width: 570px) {
+  .welcome {
+    display: block;
+    width: 50%;
+  }
+  .login_form {
+    width: 45%;
+  }
+}
+

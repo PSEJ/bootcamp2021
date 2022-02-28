@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .username {
   display: block;
 }
@@ -11,3 +12,51 @@
   width: 33%;
   margin: auto;
 }
+=======
+:root {
+    --mdc-theme-primary: #258025;
+}
+.logo {
+    margin: auto;
+    display: block;
+    width: 33%;
+    margin-top: 24px;
+}
+
+.titre {
+    text-align: center;   
+}
+
+.login {
+    display: block;
+    margin: auto;
+    margin-top: 24px;
+    width: 80%;
+    --mdc-theme-secondary: #258025;
+}
+
+.username {
+    display: block;
+}
+
+.password {
+    display: block;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-top: 24px;
+    text-align: center;
+}
+
+/* .register {
+    text-align: center;
+}
+
+.forgotten {
+    text-align: center;
+} */
+>>>>>>> a9d205f2605b3d8b5dacafa3b0c35bf546e6f0be
